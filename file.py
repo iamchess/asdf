@@ -5,17 +5,22 @@ chessBoard[0][0] = "R"
 pprint.pprint(chessBoard)
 
 #rook
-def move():
+def mRook():
     x = 0
     y = 0
-    getPosition = [0,0]
+    getPos = [][]
     chessBoard[0][0] = 0
-    if random.uniform(0, 2) < 1:
-        x = int(random.uniform(0, 7))
+    if int(random.uniform(0, 1)) == 1:
+        x = int(random.random(0.0, 8.0))
     else:
-        y = int(random.uniform(0, 7))
+        y = int(random.random(0.0, 8.0))
     newPosition = (x,y)
     chessBoard[x][y] = "R"
     pprint.pprint(chessBoard)
     
-move()
+#bishop
+def mBishop:
+	x = 0
+	y = 0
+	getPos = [x][y]
+	
